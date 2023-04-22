@@ -5,16 +5,10 @@ import ContactUs from "../assets/ContactUs.png";
 
 const MainContainer = styled.div`
   /* border: 1px solid; */
-  background: radial-gradient(
-      ellipse 70% 100% at top right,
-      #0998b7,
-      transparent
-    ),
+  background: radial-gradient(#0998b7, transparent),
     radial-gradient(ellipse 70% 100% at bottom left, #2fc389, transparent),
     linear-gradient(to left, white 10%, transparent);
-  background-size: 100% 80%, 100% 80%, 100% 100%;
-  background-position: top left, right bottom, top left;
-  background-repeat: no-repeat;
+  background-size: 0% 0%, 100% 100%, 100% 100%;
 `;
 
 const ImageContainer = styled.div`
@@ -86,7 +80,6 @@ const TalkToUs = () => {
             <CallBtn>Schedule a call</CallBtn>
             <br></br>
             <CallBtn>Email us</CallBtn>
-
           </CallUs>
         </SecondaryContainer>
       </Container>
