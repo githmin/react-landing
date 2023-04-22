@@ -5,7 +5,6 @@ import ContactUs from "../assets/ContactUs.png";
 import themeSettings from "../themeSettings.js";
 
 const MainContainer = styled.div`
-  min-width: 500px;
 
   /* border: 1px solid; */
   background: radial-gradient(#0998b7, transparent),

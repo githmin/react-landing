@@ -5,6 +5,7 @@ import HeroIcons from "./HeroIcons";
 import themeSettings from "../themeSettings.js";
 
 const MainContainer = styled.div`
+
   /* border: 1px solid; */
   background: radial-gradient(
       ellipse 70% 100% at top right,
@@ -39,7 +40,7 @@ const CenterText = styled.h1`
   font-size: 5rem;
   @media (max-width: ${themeSettings.breakpoint}) {
     padding: 2.5rem;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 `;
 

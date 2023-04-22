@@ -12,6 +12,7 @@ const MainContainer = styled.div`
   padding: 8rem;
   @media (max-width: ${themeSettings.breakpoint}) {
     padding: 8rem 0rem 8rem 0rem;
+    min-width: 0px;
   }
 `;
 

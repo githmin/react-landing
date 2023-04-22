@@ -28,9 +28,8 @@ const Subtext = styled.p`
   margin-top: 1rem;
 `;
 const CardContainer = styled.div`
-  /* border: 1px solid; */
-  width: 500px;
-  height: 500px;
+  /* width: 500px;
+  height: 500px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,13 +38,11 @@ const CardContainer = styled.div`
 const MarketingContainer = styled.div`
   content: url(${Marketing});
   width: 400px;
-  /* border: 1px solid; */
 `;
 
 const DevContainer = styled.div`
   content: url(${Dev});
   width: 400px;
-  /* border: 1px solid; */
 `;
 
 const CardContainerMain = styled.div`
@@ -100,10 +97,14 @@ const LeanMore = styled.button`
     left: 0px;
   }
 `;
+const MainContainer = styled.div`
+  /* display: flex;
+  align-content: center; */
+`;
 
 const Expertise = () => {
   return (
-    <div>
+    <MainContainer>
       <Container>
         <Header>
           <Main>Launch to market with our MVP development program</Main>
@@ -135,7 +136,7 @@ const Expertise = () => {
           </CardContainer>
         </MainSection>
       </Container>
-    </div>
+    </MainContainer>
   );
 };
 

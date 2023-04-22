@@ -16,7 +16,6 @@ const Sections = styled.div`
 const MainContainer = styled.div`
   color: white;
   background-color: #0f072c;
-  min-width: 500px;
 `;
 
 const SecondaryContainer = styled.div`
