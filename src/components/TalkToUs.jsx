@@ -3,6 +3,8 @@ import React from "react";
 import styled from "styled-components";
 import ContactUs from "../assets/ContactUs.png";
 import themeSettings from "../themeSettings.js";
+import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
+import EmailIcon from "@mui/icons-material/Email";
 
 const MainContainer = styled.div`
   /* border: 1px solid; */
@@ -37,6 +39,9 @@ const CallUs = styled.div`
 `;
 
 const CallBtn = styled.button`
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -73,9 +78,9 @@ const InfoContainer = styled.p`
   font-weight: 600;
 `;
 
-const TalkToUs = () => {
+const TalkToUs = (props) => {
   return (
-    <MainContainer>
+    <MainContainer ref={props.targetRef}>
       <Container>
         <SecondaryContainer>
           <ImageContainer />
@@ -84,9 +89,19 @@ const TalkToUs = () => {
               Say goodbye to frustration and delays, and hello to efficiency and
               growth.<br></br> Contact us now and let's get started!
             </InfoContainer>
-            <CallBtn>Schedule a call</CallBtn>
+            <CallBtn
+              onClick={() => (window.location.href = "tel:+94766281881")}
+            >
+              Call an expert right away &nbsp;
+              <PhoneEnabledIcon />
+            </CallBtn>
             <br></br>
-            <CallBtn>Email us</CallBtn>
+            <CallBtn
+              onClick={() => (window.location = "mailto:githmin21@gmail.com")}
+            >
+              Email us &nbsp;
+              <EmailIcon />
+            </CallBtn>
           </CallUs>
         </SecondaryContainer>
       </Container>

@@ -6,16 +6,22 @@ import TalkToUs from "./components/TalkToUs";
 import WorkDone from "./components/WorkDone";
 import Footer from "./components/Footer";
 
+import { useRef } from "react";
 
 const App = () => {
+  const targetRef = useRef(null);
+
+  function scrollToCall() {
+    targetRef.current.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div>
-      <Navbar />
+      <Navbar scrollToCall={scrollToCall} />
       <Hero />
-      <Expertise />
+      <Expertise scrollToCall={scrollToCall} />
       <WorkDone />
-      <TalkToUs />
-      <Footer/>
+      <TalkToUs targetRef={targetRef} />
+      <Footer />
     </div>
   );
 };

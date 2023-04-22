@@ -102,7 +102,7 @@ const MainContainer = styled.div`
   align-content: center; */
 `;
 
-const Expertise = () => {
+const Expertise = (props) => {
   return (
     <MainContainer>
       <Container>
@@ -121,7 +121,7 @@ const Expertise = () => {
                 Get consulted by marketing experts on wide range of products to
                 kick-start your project
               </InfoContainer>
-              <LeanMore>Learn More</LeanMore>
+              <LeanMore onClick={props.scrollToCall}>Learn More</LeanMore>
             </CardContainerMain>
           </CardContainer>
           <CardContainer>
@@ -131,7 +131,7 @@ const Expertise = () => {
                 Turbocharge your business with put world-class dev team for your
                 ultimate success!
               </InfoContainer>
-              <LeanMore>Learn More</LeanMore>
+              <LeanMore onClick={props.scrollToCall}>Learn More</LeanMore>
             </CardContainerMain>
           </CardContainer>
         </MainSection>

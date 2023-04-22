@@ -26,7 +26,7 @@ const CenterColumn = styled.ul`
   }
 `;
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <Container>
       <MainContainer>
@@ -36,7 +36,9 @@ const Navbar = () => {
           <li>Marketing</li>
           <li>Support & Services</li>
         </CenterColumn>
-        <Button variant="outlined">Contact Us</Button>
+        <Button variant="outlined" onClick={props.scrollToCall}>
+          Contact Us
+        </Button>
       </MainContainer>
     </Container>
   );
