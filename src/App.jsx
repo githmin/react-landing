@@ -5,22 +5,18 @@ import Expertise from "./components/Expertise";
 import TalkToUs from "./components/TalkToUs";
 import WorkDone from "./components/WorkDone";
 import Footer from "./components/Footer";
-import styled from "styled-components";
 
-const Wrapper = styled.div`
-  min-width: 550px;
-`;
 
 const App = () => {
   return (
-    <Wrapper>
+    <div>
       <Navbar />
       <Hero />
       <Expertise />
       <WorkDone />
-      <TalkToUs />u
-      <Footer />
-    </Wrapper>
+      <TalkToUs />
+      <Footer/>
+    </div>
   );
 };
 
