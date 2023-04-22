@@ -5,7 +5,6 @@ import ContactUs from "../assets/ContactUs.png";
 import themeSettings from "../themeSettings.js";
 
 const MainContainer = styled.div`
-
   /* border: 1px solid; */
   background: radial-gradient(#0998b7, transparent),
     radial-gradient(ellipse 70% 100% at bottom left, #2fc389, transparent),
@@ -23,10 +22,10 @@ const SecondaryContainer = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  padding-bottom: 5rem;
   @media (max-width: ${themeSettings.breakpoint}) {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 5rem;
   }
 `;
 

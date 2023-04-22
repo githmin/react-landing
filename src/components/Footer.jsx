@@ -7,6 +7,7 @@ const Sections = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
   padding: 5rem;
   gap: 15px;
   @media (max-width: ${themeSettings.breakpoint}) {
