@@ -5,7 +5,6 @@ import HeroIcons from "./HeroIcons";
 import themeSettings from "../themeSettings.js";
 
 const MainContainer = styled.div`
-  min-width: 500px;
   /* border: 1px solid; */
   background: radial-gradient(
       ellipse 70% 100% at top right,
@@ -30,8 +29,6 @@ const SpecializeDiv = styled.div`
   flex-direction: column;
 `;
 const CenterText = styled.h1`
-  min-width: 500px;
-
   display: flex;
   justify-content: center;
   align-items: center;
