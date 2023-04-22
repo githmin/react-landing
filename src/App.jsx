@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Expertise from "./components/Expertise";
 import TalkToUs from "./components/TalkToUs";
 import WorkDone from "./components/WorkDone";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Expertise />
       <WorkDone />
       <TalkToUs />
+      <Footer/>
     </div>
   );
 };
