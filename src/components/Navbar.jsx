@@ -3,12 +3,14 @@ import Container from "@mui/material/Container";
 import styled from "styled-components";
 import logo from "../assets/2-nobg.png";
 import { Button } from "@mui/material";
+import themeSettings from "../themeSettings.js";
 
 const MainContainer = styled.div`
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 500px;
 `;
 
 const LogoContainer = styled.div`
@@ -20,6 +22,9 @@ const CenterColumn = styled.ul`
   display: flex;
   list-style: none;
   gap: 4rem;
+  @media (max-width: ${themeSettings.breakpoint}) {
+    display: none;
+  }
 `;
 
 const Navbar = () => {

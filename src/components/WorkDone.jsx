@@ -5,9 +5,14 @@ import FakeLogo1 from "../assets/FakeLogo1.png";
 import FakeLogo2 from "../assets/FakeLogo2.png";
 import FakeLogo3 from "../assets/FakeLogo3.png";
 import FakeLogo4 from "../assets/FakeLogo4.png";
+import themeSettings from "../themeSettings.js";
 
 const MainContainer = styled.div`
+  min-width: 500px;
   padding: 8rem;
+  @media (max-width: ${themeSettings.breakpoint}) {
+    padding: 8rem 0rem 8rem 0rem;
+  }
 `;
 
 const SecondaryContainer = styled.div`
@@ -16,6 +21,9 @@ const SecondaryContainer = styled.div`
   background-color: #cdeaf0;
   padding: 2rem;
   border-radius: 1rem;
+  @media (max-width: ${themeSettings.breakpoint}) {
+    flex-direction: column;
+  }
 `;
 
 const FakeLogoOne = styled.div`
@@ -38,10 +46,20 @@ const FakeLogoFour = styled.div`
 const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  @media (max-width: ${themeSettings.breakpoint}) {
+    flex-direction: column;
+    padding: 10px;
+  }
 `;
 
 const Logos = [FakeLogoOne, FakeLogoTwo, FakeLogoThree, FakeLogoFour];
-const TextContainer = styled.div``;
+const TextContainer = styled.div`
+  @media (max-width: ${themeSettings.breakpoint}) {
+    text-align: center;
+  }
+`;
 
 const WorkDone = () => {
   return (

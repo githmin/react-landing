@@ -7,6 +7,7 @@ import react from "../assets/react.png";
 import xd from "../assets/xd.png";
 import aws from "../assets/aws.png";
 import nodejs from "../assets/nodejs.png";
+import themeSettings from "../themeSettings.js";
 
 const JsIcon = styled.div`
   content: url(${js});
@@ -52,6 +53,8 @@ const icons = [
 
 const MainDiv = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const IconPaddin = styled.div`

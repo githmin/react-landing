@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
+import themeSettings from "../themeSettings.js";
 
 const Sections = styled.div`
   display: flex;
@@ -8,15 +9,23 @@ const Sections = styled.div`
   flex-direction: column;
   padding: 5rem;
   gap: 15px;
+  @media (max-width: ${themeSettings.breakpoint}) {
+    padding: 2.5rem;
+  }
 `;
 const MainContainer = styled.div`
   color: white;
   background-color: #0f072c;
+  min-width: 500px;
 `;
 
 const SecondaryContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
+  @media (max-width: ${themeSettings.breakpoint}) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Topic = styled.h3``;
@@ -24,7 +33,12 @@ const Topic = styled.h3``;
 const Link = styled.p``;
 
 const CopyrightContainer = styled.div`
-padding: 1rem;
+  padding: 1rem;
+  @media (max-width: ${themeSettings.breakpoint}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const Footer = () => {
   return (

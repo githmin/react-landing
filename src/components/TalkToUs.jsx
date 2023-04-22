@@ -2,8 +2,11 @@ import { Container } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 import ContactUs from "../assets/ContactUs.png";
+import themeSettings from "../themeSettings.js";
 
 const MainContainer = styled.div`
+  min-width: 500px;
+
   /* border: 1px solid; */
   background: radial-gradient(#0998b7, transparent),
     radial-gradient(ellipse 70% 100% at bottom left, #2fc389, transparent),
@@ -20,6 +23,12 @@ const SecondaryContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: ${themeSettings.breakpoint}) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
 `;
 
 const CallUs = styled.div`

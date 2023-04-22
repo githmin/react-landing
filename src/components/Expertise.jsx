@@ -3,10 +3,14 @@ import React from "react";
 import styled from "styled-components";
 import Marketing from "../assets/Marketing.jpg";
 import Dev from "../assets/Dev.jpg";
+import themeSettings from "../themeSettings.js";
 
 const Main = styled.h1`
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   font-size: 2rem;
+  @media (max-width: ${themeSettings.breakpoint}) {
+    text-align: center;
+  }
 `;
 
 const Header = styled.h1`
@@ -21,6 +25,7 @@ const Header = styled.h1`
 
 const Subtext = styled.p`
   font-size: 1rem;
+  margin-top: 1rem;
 `;
 const CardContainer = styled.div`
   /* border: 1px solid; */
@@ -54,6 +59,10 @@ const MainSection = styled.div`
   justify-content: center;
   align-items: center;
   gap: 15px;
+  @media (max-width: ${themeSettings.breakpoint}) {
+    flex-direction: column;
+    gap: 8rem;
+  }
 `;
 const InfoContainer = styled.p`
   padding: 2rem;
@@ -108,8 +117,8 @@ const Expertise = () => {
             <CardContainerMain>
               <MarketingContainer />
               <InfoContainer>
-                Get consulted by marketing experts on wide range of products
-                to kick-start your project
+                Get consulted by marketing experts on wide range of products to
+                kick-start your project
               </InfoContainer>
               <LeanMore>Learn More</LeanMore>
             </CardContainerMain>
